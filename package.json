@@ -1,0 +1,25 @@
+{
+  "name": "lopezsantos-distopicos3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "sass scss/origen.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "sass": "^1.49.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cristinaLopezSantos/distopicos-seosass.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cristinaLopezSantos/distopicos-seosass/issues"
+  },
+  "homepage": "https://github.com/cristinaLopezSantos/distopicos-seosass#readme",
+  "description": ""
+}

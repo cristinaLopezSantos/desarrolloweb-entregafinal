@@ -1,0 +1,64 @@
+/******************
+ESTILOS DE TIPOGRAFIAS
+*******************************/
+
+// Google Fonts
+@font-face {
+    font-family: "Megrim-Regular";
+    src: url("../fonts/megrim/Megrim-Regular.ttf") ;
+}
+
+@font-face {
+    font-family: "Raleway-Light";
+    src: url("../fonts/raleway/static/Raleway-Light.ttf") ;
+}
+
+@font-face {
+    font-family: "Raleway-Regular";
+    src: url("../fonts/raleway/static/Raleway-Regular.ttf") ;
+}
+
+@font-face {
+    font-family: "Raleway-SemiBold";
+    src: url("../fonts/raleway/static/Raleway-SemiBold.ttf") ;
+}
+
+//VARIABLES TIPOGRÁFICAS
+$nombre : "Megrim-Regular";
+$titulos : "Raleway-SemiBold";
+$texto : "Raleway-Regular";
+$textoFino : "Raleway-Light";
+$textoNegrita : "Raleway-SemiBold";
+
+
+/* MAPS*/
+$mapa:(
+    /* clave: valor*/
+    h1: $titulos,
+    h2: $textoNegrita,
+    h3: $texto,
+    h4: $texto,
+    h5: $textoFino,
+    h6: $textoFino,
+    p: $texto
+);
+/* Asignación de tipografías al texto */
+@each $encabezados, $letra in $mapa {
+  // fragmento que repite
+    #{$encabezados} {
+        font-family: $letra;
+    }
+}
+
+.cabecera {
+    font-family: $nombre;
+}
+
+.negrita {
+    font-family: $textoNegrita;
+}
+
+body {
+    font-size: 1.2rem;
+}
+

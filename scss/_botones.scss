@@ -1,0 +1,40 @@
+//BOTONES
+.boton {
+    text-transform: uppercase;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid $colorOscuro;
+    color: $colorOscuro;
+    &:hover {
+        color:$colorContraste;
+        border: 1px solid $colorContraste;
+    } 
+    &:active {
+        opacity: 0.5;
+    } 
+}
+
+.botonBlanco {
+    @extend .boton;
+    border: 1px solid $colorClaro;
+    color: $colorClaro;
+}
+
+a {
+    text-decoration: none;
+    color: $colorOscuro;
+    &:hover {
+        color:$colorContraste;
+    } 
+    &:active {
+        opacity: 0.5;
+    }   
+}
+
+
+
+
+
+
+

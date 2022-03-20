@@ -1,0 +1,84 @@
+/*******************
+    RESPONSIVE 
+ ******************/
+
+/*MEDIA QUERIES*/
+/*smartphone*/
+//sm
+@media only screen and (max-width: 480px) {
+  .tresColumnas {
+    width: 100%;
+  }
+
+  .unaColumna {
+    width: 100%;
+  }
+  #encabezadoTienda{
+    flex-direction: column;
+  }
+
+  .horizontal {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .boton {
+    padding: 0.1rem 0.4rem;
+    font-size: 16px;
+  }
+  
+}
+//md
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .tresColumnas {
+    width: 65%;
+    
+  }
+  .unaColumna {
+    width: 65%;
+  }
+
+  #encabezadoTienda{
+    flex-direction: column;
+  }
+
+  .horizontal {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+//lg
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .tresColumnas {
+    width: 100%;
+  }
+
+  .unaColumna {
+    width: 85%;
+  }
+
+}
+//xl
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .tresColumnas {
+    width: 90%;
+  }
+
+  .unaColumna {
+    width: 75%;
+  }
+
+}
+//xxl
+@media only screen and (min-width: 1201px) {
+  .tresColumnas {
+    width: 70%;
+  }
+
+  .unaColumna {
+    width: 50%;
+  }
+
+}
+
